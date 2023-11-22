@@ -1,0 +1,65 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Set a minimum height to ensure the container takes at least the full height of the viewport */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+    margin: 20px; /* Add some margin around the container */
+}
+
+.textsms {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    max-width: 600px; /* Limit the maximum width of the container for better readability on smaller screens */
+    margin-left: auto; /* Center the container on larger screens */
+    margin-right: auto; /* Center the container on larger screens */
+}
+
+.qr img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #f8f8f8;
+    color: #616161;
+    text-align: center;
+    border-top: dotted 1px #ddd;
+    font-size: 13px;
+    height: 30px;
+    padding-top: 4px;
+}
+
+.top-l {
+    margin: 3px 0px 6px 0px;
+    position: relative;
+    right: 80px;
+    bottom: 90px;
+}
+.content {
+    position: relative;
+    bottom: 90px;
+}
+
+/* Media Query for smaller screens */
+@media only screen and (max-width: 600px) {
+    .textsms {
+        margin-left: 10px; /* Adjust margin for better readability on smaller screens */
+        margin-right: 10px; /* Adjust margin for better readability on smaller screens */
+    }
+}
